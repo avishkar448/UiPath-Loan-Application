@@ -1,0 +1,6 @@
+{
+  "Name": "UiBank_Loan_Application_for_TDM",
+  "ProjectType": "Tests",
+  "Description": "Test Automation Project - TDM",
+  "MainFile": "Main.xaml"
+}

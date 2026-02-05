@@ -1,0 +1,9 @@
+{
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/kavinhkywaof/DefaultTenant/testmanager_",
+  "defaultProject": {
+    "id": "f85f58ca-bb72-0000-ab1a-0b4941788ed5",
+    "name": "Loan Application TDM",
+    "key": "LAT"
+  }
+}

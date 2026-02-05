@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xFVTKeUulUWoCsCglaKULA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/loans/result/6981fe95ea128d6250337a9e/5/true" CVScreenId="4d986599-afed-4295-9474-7cdc7d18a74d" CvElementArea="458, 436, 240, 53" CvTextArea="480, 454, 193, 19" CvTextArgument="Apply For Another Loan" CvType="Button" DesignTimeRectangle="459, 738, 237, 50" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='applyForNewLoanButton' tag='BUTTON' /&gt;" Guid="46a2de22-918d-418d-aa79-35a8e921933b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Loan result' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="39f797db-6939-4cc6-b355-9873dee58050" CvTextArea="241, 206, 142, 38" CvTextArgument="UiBank" CvType="Text" DesignTimeRectangle="223, 186, 181, 78" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" Guid="377ac1a4-41ab-4a74-b6b0-fc13c9cccf0c" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f6e37efe9b7ce3ed7083c268543230b1.png" xmlns="">0MDIZDgzCQUyTP1j-6OIOQw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

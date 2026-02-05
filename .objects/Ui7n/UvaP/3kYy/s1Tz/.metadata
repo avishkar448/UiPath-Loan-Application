@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Loan Amount",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "s1Tzcz4HzUKV-3wy6A9neA",
+  "Reference": "8rclYOQNG0qux4n1ZBsgrw/s1Tzcz4HzUKV-3wy6A9neA",
+  "ParentRef": "8rclYOQNG0qux4n1ZBsgrw/3kYyHUkFYkiEmtsjGUwzkQ",
+  "Created": "2026-02-03T12:40:40.1940478Z",
+  "Updated": "2026-02-03T12:40:40.1940478Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

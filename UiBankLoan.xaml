@@ -1,0 +1,407 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" this:TestCase.uiBankLoanData="[System.Text.Json.JsonSerializer.Deserialize(Of UiBank_Loan_Application_for_TDM.UiBankLoanData)(&quot;{&quot;&quot;Email&quot;&quot;:&quot;&quot;john.doe@gmail.com&quot;&quot;,&quot;&quot;LoanAmount&quot;&quot;:&quot;&quot;2500&quot;&quot;,&quot;&quot;LoanTerm&quot;&quot;:&quot;&quot;5&quot;&quot;,&quot;&quot;YearlyIncome&quot;&quot;:&quot;&quot;60000&quot;&quot;,&quot;&quot;Age&quot;&quot;:&quot;&quot;32&quot;&quot;,&quot;&quot;Id&quot;&quot;:&quot;&quot;A7A08558-1939-41B2-85E2-019C2CA33969&quot;&quot;,&quot;&quot;UpdateTime&quot;&quot;:&quot;&quot;2026-02-05T12:40:20.5194997+05:30&quot;&quot;,&quot;&quot;CreateTime&quot;&quot;:&quot;&quot;2026-02-05T12:40:20.5194997+05:30&quot;&quot;,&quot;&quot;UpdatedBy&quot;&quot;:{&quot;&quot;UpdateTime&quot;&quot;:&quot;&quot;2026-02-05T12:33:50.14+05:30&quot;&quot;,&quot;&quot;IsActive&quot;&quot;:true,&quot;&quot;Name&quot;&quot;:&quot;&quot;Kavina Kanse&quot;&quot;,&quot;&quot;Type&quot;&quot;:0,&quot;&quot;CreateTime&quot;&quot;:&quot;&quot;2026-02-05T12:33:50.14+05:30&quot;&quot;,&quot;&quot;Id&quot;&quot;:&quot;&quot;0C3C529E-C860-40DF-8BDC-0171EA365806&quot;&quot;,&quot;&quot;Email&quot;&quot;:&quot;&quot;kavinakanse@gmail.com&quot;&quot;},&quot;&quot;CreatedBy&quot;&quot;:{&quot;&quot;UpdateTime&quot;&quot;:&quot;&quot;2026-02-05T12:33:50.14+05:30&quot;&quot;,&quot;&quot;IsActive&quot;&quot;:true,&quot;&quot;Name&quot;&quot;:&quot;&quot;Kavina Kanse&quot;&quot;,&quot;&quot;Type&quot;&quot;:0,&quot;&quot;CreateTime&quot;&quot;:&quot;&quot;2026-02-05T12:33:50.14+05:30&quot;&quot;,&quot;&quot;Id&quot;&quot;:&quot;&quot;0C3C529E-C860-40DF-8BDC-0171EA365806&quot;&quot;,&quot;&quot;Email&quot;&quot;:&quot;&quot;kavinakanse@gmail.com&quot;&quot;},&quot;&quot;RecordOwner&quot;&quot;:{&quot;&quot;UpdateTime&quot;&quot;:&quot;&quot;2026-02-05T12:33:50.14+05:30&quot;&quot;,&quot;&quot;IsActive&quot;&quot;:true,&quot;&quot;Name&quot;&quot;:&quot;&quot;Kavina Kanse&quot;&quot;,&quot;&quot;Type&quot;&quot;:0,&quot;&quot;CreateTime&quot;&quot;:&quot;&quot;2026-02-05T12:33:50.14+05:30&quot;&quot;,&quot;&quot;Id&quot;&quot;:&quot;&quot;0C3C529E-C860-40DF-8BDC-0171EA365806&quot;&quot;,&quot;&quot;Email&quot;&quot;:&quot;&quot;kavinakanse@gmail.com&quot;&quot;}}&quot;)]" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:u="clr-namespace:UiBank_Loan_Application_for_TDM;assembly=DataService.UiBank_Loan_Application_for_TDM" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Email" Type="InArgument(x:String)" />
+    <x:Property Name="Loan_Amount" Type="InArgument(x:String)" />
+    <x:Property Name="Loan_Term" Type="InArgument(x:String)" />
+    <x:Property Name="Yearly_Income" Type="InArgument(x:String)" />
+    <x:Property Name="Age" Type="InArgument(x:String)" />
+    <x:Property Name="uiBankLoanData" Type="InArgument(u:UiBankLoanData)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>376,259</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Json</x:String>
+      <x:String>UiPath.DataService.Definition</x:String>
+      <x:String>UiBank_Loan_Application_for_TDM</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Json</AssemblyReference>
+      <AssemblyReference>UiPath.DataService.Definition</AssemblyReference>
+      <AssemblyReference>DataService.UiBank_Loan_Application_for_TDM</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="721,3033" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="522,3010" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome: UiBank-Welcome" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2927" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="e7306c98-81f3-47ef-b88f-c6841b952d00" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,2733" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="StatusMsg" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Products'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e7306c98-81f3-47ef-b88f-c6841b952d00" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="uibank.uipath.com/welcome" CVScreenId="e0206f83-994e-492c-8a20-d2b4909f65e3" ContentHash="b79y-mcY7UKx7HxaU7zy1w" DesignTimeRectangle="971, 204, 110, 43" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='dropdownMenuLink' tag='A' /&gt;" Guid="0d7ead59-0c11-4542-84d3-403399487163" InformativeScreenshot="63ce1fc53b479b990103b75344888754.png" Reference="8rclYOQNG0qux4n1ZBsgrw/0YWir9mvy06o080M8OwE6Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Welcome' /&gt;" SearchSteps="Selector" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="e0206f83-994e-492c-8a20-d2b4909f65e3" DesignTimeRectangle="1081, 204, 63, 43" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Login' tag='A' /&gt;" Guid="28960831-ed07-4f95-b941-06c19135a2ac" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Loans'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e7306c98-81f3-47ef-b88f-c6841b952d00" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="uibank.uipath.com/welcome" CVScreenId="1e7b3454-b1dc-45a5-972c-0bef268901e3" ContentHash="v0j9KxWCQEiqzsl3G8vjPA" DesignTimeRectangle="972, 278, 158, 32" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='dropdown-item' tag='A' /&gt;" Guid="b44c65e3-a2d0-4b04-9ab2-0e7391a87400" InformativeScreenshot="a959c62e1fb562720e5b4beeb6eee1aa.png" Reference="8rclYOQNG0qux4n1ZBsgrw/I3YJGC6snUGkSbCZeZZ6cw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Welcome' /&gt;" SearchSteps="Selector" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="1e7b3454-b1dc-45a5-972c-0bef268901e3" DesignTimeRectangle="971, 204, 110, 43" ElementType="Text" FullSelectorArgument="&lt;webctrl id='dropdownMenuLink' tag='A' /&gt;" Guid="82a58fff-78ba-4306-938f-d33d9ddb5075" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply For A Loan'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e7306c98-81f3-47ef-b88f-c6841b952d00" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans" CVScreenId="9c4042a5-077e-489a-8b0b-404bf3f0bddf" ContentHash="TAW3YjVRbEy--A0zehR_Rw" DesignTimeRectangle="461, 537, 182, 50" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='applyButton' tag='BUTTON' /&gt;" Guid="93faa218-e239-474a-9c57-516045f7957c" InformativeScreenshot="99277ca7df005c9b5b6a3b9bcfc6c56d.png" Reference="8rclYOQNG0qux4n1ZBsgrw/9l61dysH-06rOpj7DHJ-oA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Loan Home' /&gt;" SearchSteps="Selector" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="393, 314, 581, 119" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname=' Financing for what ever life throws at you! ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Financing for what ever life throws at you!' /&gt;" Guid="c2aa5081-ee7e-4e7d-b473-5a0c92f02860" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="e7306c98-81f3-47ef-b88f-c6841b952d00" Text="[uiBankLoanData.Email]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans/apply" CVScreenId="d8480490-3133-45b4-b652-e021457584e1" ContentHash="x6kgyNBivk2HkvyRLwAsUQ" CvElementArea="427, 413, 511, 56" CvType="InputBox" DesignTimeRectangle="429, 513, 509, 55" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='Enter email address' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e7bd2506-ba0b-4db7-b854-f7c3b00e85b1" InformativeScreenshot="f6f70756d7c3ee00be99d6ea9af30dbd.png" IsResponsive="True" Reference="8rclYOQNG0qux4n1ZBsgrw/_iQuKpyWF0a9PVFc6dVomg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Loan Apply' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="d8480490-3133-45b4-b652-e021457584e1" CvTextArea="427, 395, 155, 15" CvTextArgument="Email Address of Requester" CvType="Text" DesignTimeRectangle="429, 494, 152, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='uibank-label' aaname='Email Address of Requester' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Email Address of Requester' /&gt;" Guid="4c898670-3331-4d2a-9d55-304853aec8a0" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Loan Amount'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="e7306c98-81f3-47ef-b88f-c6841b952d00" Text="[uiBankLoanData.LoanAmount]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans/apply" CVScreenId="d8480490-3133-45b4-b652-e021457584e1" ContentHash="SyE0Hv4gFUq59X22VkNKEw" CvElementArea="428, 508, 511, 54" CvType="InputBox" DesignTimeRectangle="429, 608, 509, 54" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='amount' tag='INPUT' type='number' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='Enter loan amount you are looking for' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d3dd2d07-c648-43ce-ad06-1b8c723399e1" InformativeScreenshot="8ba928a7b36981a72a0875e83dbc5962.png" IsResponsive="True" Reference="8rclYOQNG0qux4n1ZBsgrw/s1Tzcz4HzUKV-3wy6A9neA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Loan Apply' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="d8480490-3133-45b4-b652-e021457584e1" CvTextArea="427, 491, 140, 14" CvTextArgument="Loan Amount Requested" CvType="Text" DesignTimeRectangle="429, 589, 137, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Loan Amount Requested' tag='LABEL' type='' class='uibank-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Loan Amount Requested' /&gt;" Guid="f2a25b65-7102-4a9e-800c-3ba43d24921e" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NSelectItem DisplayName="Select Item ''Loan Term''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,199" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[uiBankLoanData.LoanTerm]" ScopeIdentifier="e7306c98-81f3-47ef-b88f-c6841b952d00" Version="V5">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="5">
+                    <x:String>Select your loan term</x:String>
+                    <x:String>1</x:String>
+                    <x:String>3</x:String>
+                    <x:String>5</x:String>
+                    <x:String>10</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans/apply" CVScreenId="f7e4efa8-e50b-44a4-b814-b98868459712" CvElementArea="428, 301, 510, 55" CvType="InputBox" DesignTimeRectangle="429, 302, 509, 54" DesignTimeScaleFactor="1" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='term' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='term' tag='SELECT' type='number' class='form-control uibank-input select-color ng-pristine ng-invalid ng-touched' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="1e41c72d-2bfd-4658-9406-fa0a9b1efe1d" InformativeScreenshot="27860843971170738ca3b38c17953c59.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Loan Apply' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="f7e4efa8-e50b-44a4-b814-b98868459712" CvTextArea="427, 285, 61, 11" CvTextArgument="Loan Term" CvType="Text" DesignTimeRectangle="429, 283, 59, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Loan Term' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Loan Term' tag='LABEL' type='' class='uibank-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Loan Term' /&gt;" Guid="4dfc1a6e-5555-46fe-9196-af6b8c5ec09c" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Current Yearly Income'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="e7306c98-81f3-47ef-b88f-c6841b952d00" Text="[uiBankLoanData.YearlyIncome]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans/apply" CVScreenId="1679399a-0715-4063-b9a4-834d9f254316" ContentHash="6dcg2O524EquPbUHjnb0jA" CvTextArea="441, 716, 363, 13" CvTextArgument="How much do VOu make before taxes a vear?" CvType="Text" DesignTimeRectangle="429, 464, 509, 55" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='income' tag='INPUT' type='number' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='How much do you make before taxes a year?' aaname='Current Yearly Income (Before Taxes)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="5235f59a-451a-40fb-ad34-f2bbc538dd07" InformativeScreenshot="ce5085646b05ee1985ed38fbca5e2715.png" IsResponsive="True" Reference="8rclYOQNG0qux4n1ZBsgrw/U2yX_fKOlE6lYmSWlWL0jA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Loan Apply' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="1679399a-0715-4063-b9a4-834d9f254316" CvTextArea="427, 677, 210, 15" CvTextArgument="Current Yearly Income (Before Taxes)" CvType="Text" DesignTimeRectangle="429, 445, 209, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Current Yearly Income (Before Taxes)' tag='LABEL' type='' class='uibank-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Current Yearly Income (Before Taxes)' /&gt;" Guid="4fb5eccc-340a-4e34-97a3-e29b833bc2f5" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Age'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="e7306c98-81f3-47ef-b88f-c6841b952d00" Text="[uiBankLoanData.Age]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans/apply" CVScreenId="59691b8a-922b-4794-b786-c602bc675326" ContentHash="wBY7j9J95E2lpaHe_mWycA" CvElementArea="428, 490, 510, 56" CvType="InputBox" DesignTimeRectangle="429, 491, 509, 54" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='age' tag='INPUT' type='number' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='Please enter your age' aaname='Age' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="5dbd217c-32f8-4744-90dd-e186072bfd58" InformativeScreenshot="3a878c4272caef8ff0f35d180cb22b2f.png" IsResponsive="True" Reference="8rclYOQNG0qux4n1ZBsgrw/xW1n9k-OFUSgsRM6JreoQA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Loan Apply' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="59691b8a-922b-4794-b786-c602bc675326" CvTextArea="427, 474, 25, 14" CvTextArgument="Age" CvType="Text" DesignTimeRectangle="429, 472, 22, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Age' tag='LABEL' type='' class='uibank-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Age' /&gt;" Guid="9401917e-ff19-4973-8eff-883b95a6ac7c" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit Loan Application'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e7306c98-81f3-47ef-b88f-c6841b952d00" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans/apply" CVScreenId="18bab439-932e-4f8c-bdf5-70c66d276c64" ContentHash="OcM0M-mYG0K62CiTWB63zg" DesignTimeRectangle="561, 489, 245, 50" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submitButton' tag='BUTTON' /&gt;" Guid="44adc234-5dbe-4c57-845b-6f858edcb32f" InformativeScreenshot="eff59dfa87eb9fa731c96c92b3dbf50b.png" Reference="8rclYOQNG0qux4n1ZBsgrw/ytk18kBnWU6szi4P4wQTdQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Loan Apply' /&gt;" SearchSteps="Selector" Version="V6">
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State 'Apply For Another Loan'" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,457" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="e7306c98-81f3-47ef-b88f-c6841b952d00" Version="V5">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,116" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text 'Status Msg'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e7306c98-81f3-47ef-b88f-c6841b952d00" TextString="[StatusMsg]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans/result/6981ec49ea128d6250337a5b/4/true" CVScreenId="3c33fc11-4aea-4718-9b2b-9b1ba75c3ae4" ContentHash="dQHVFD5su0mNuOCE7J5q0w" CvTextArea="559, 404, 247, 54" CvTextArgument="Congrats!" CvType="Text" DesignTimeRectangle="272, 398, 823, 58" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" Guid="266d7bba-d17f-4476-9a35-47539ed9a826" InformativeScreenshot="3e078f9d27aa920d87a920e7d1847169.png" Reference="8rclYOQNG0qux4n1ZBsgrw/XnHnrbSbT0ybD_Ho8OtOlg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Loan result' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="47f06c00-25ce-4c12-a691-4dd878060250" CvTextArea="241, 206, 142, 38" CvTextArgument="UiBank" CvType="Text" DesignTimeRectangle="223, 186, 181, 78" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" Guid="ff2a6b17-82d9-4a91-aebe-f2d8cda1df7c" SearchSteps="Selector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGetText>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans/result/6981fe95ea128d6250337a9e/5/true" CVScreenId="4d986599-afed-4295-9474-7cdc7d18a74d" ContentHash="xFVTKeUulUWoCsCglaKULA" CvElementArea="458, 436, 240, 53" CvTextArea="480, 454, 193, 19" CvTextArgument="Apply For Another Loan" CvType="Button" DesignTimeRectangle="459, 738, 237, 50" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='applyForNewLoanButton' tag='BUTTON' /&gt;" Guid="46a2de22-918d-418d-aa79-35a8e921933b" InformativeScreenshot="f6e37efe9b7ce3ed7083c268543230b1.png" Reference="8rclYOQNG0qux4n1ZBsgrw/7MTQzo-KZE24v31YhdjE1Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Loan result' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="39f797db-6939-4cc6-b355-9873dee58050" CvTextArea="241, 206, 142, 38" CvTextArgument="UiBank" CvType="Text" DesignTimeRectangle="223, 186, 181, 78" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" Guid="377ac1a4-41ab-4a74-b6b0-fc13c9cccf0c" SearchSteps="Selector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="452,221" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Contains" OutputMessageFormat="The loan is approved successfully" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+                <uta:VerifyExpressionWithOperator.FirstExpression>
+                  <InArgument x:TypeArguments="x:String">[StatusMsg]</InArgument>
+                </uta:VerifyExpressionWithOperator.FirstExpression>
+                <uta:VerifyExpressionWithOperator.SecondExpression>
+                  <InArgument x:TypeArguments="x:String">["Congrats"]</InArgument>
+                </uta:VerifyExpressionWithOperator.SecondExpression>
+              </uta:VerifyExpressionWithOperator>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" ContentHash="gHZ6b_0fTk6RpJ2qt5ZeHg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAMAAAALgmiIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABgUExURfpGFvyMbv////7Rxf/z8PtpQv/5+PyumfyAX/x1UftjO/7WzP3Lvf25p/7o4vtdM/2/r/2dhPx6WP2zoPtXLP7u6fpMHf7i2vtvSfyokf7c0/yGZvpSJf2XfP3Ftvyiiq2qGj8AAAMzSURBVHhe7ZvZcqMwEEUJeMMexx7v8fr/fxnAF4O6JRNVSaOZmntekrQIfQxCkqHJHn8rGSGEEEIIqbhhdZSADyg4+MyTUUDBAc0s0MwfmvlDM39o5g/N/EluNiom+E2Q1my7abJstvi7T0qz4wlZsux0RKwjodn2gCQNX4i+SGd2NsSybIF4SzKzyRgpWubiSkhm9oUMHeJ8JjPren/LCi0gmdkVGXqYyVKZ7ZGgT4G2J15mi8JkhLiLI7Zr6Q1atrxLtD3xMlsh2mJ+SI38MvuBeMUZoT6/0PYklVkuRrMac0RLZiaHsyy7mgNaMrMbYh0XtIBkZiO5s+seLSCZmcpsXpkpzcT8JM5lUrN8MUe8mpnMEaMmpVk+mc5quflsallxJzVrOOOnJL2ZC5o10Ixmdv5LsyFtmjXQjGZ2aFZBswaa0QzQrIFmNLNDswqaNdCMZoBmDTSjmR3TrLt//0Q+9pD8ObMS0RZfsxviDUHNZoi2PBB3IT+JsX1QM7kzXzOj/CeomXy5Te5M8rZfBjWT1R9jxB2MsNkL41oOarZEtOXgKB0Dat/Gg/KgZndEX7ieZj2ZYqsXxlPfoGbq9KjSLINn2VuHWV4T1EwVDMwRt7KXhQ9m7rBmqmBAFo31USfTHJjDmslLQD/97lAFZmJnYc0+Ee64o0Wj3uwVVVxhzdRqI9u5Bo6jKq8RqQOb6cqUsb2g6lN9Bnl4A5vp02lXs4jJCSOwmVpuVKzWaOvY7tDWY4q2ltBmtrqx7HTv97bJWs7kNapDhjazVGfVHGbLojjn56KYypEfyEMW3kzNnT/joHpjcDO1HPwZ6pBFMNtbevcgMm1FeLOhf7EhK59rIpjpeWeIg66xj2Pm3dWsk2sUs5FjZLBz0CNxTRQzvds37BxruEhmliJ6B2NR8vkillm+thQRW7g4v15FM8v3t2G38s3donhm1VJnoLed3t7FimlWrTwu7uO2cS/EG+KaVSx+W1Yf85uxLrIS3axiv348NmVZzaerspw9HkvX5WhwxxvxLfIQhzCLA838oZk/NPOHZv7QzB+a+UMzf2jmzz9rdiqTYb+5SQghhJBBsuwbfx+VBGVWUxIAAAAASUVORK5CYII=" InformativeScreenshot="793680bc75a9eee8ab5ec4e3994a9f15.jpg" Reference="8rclYOQNG0qux4n1ZBsgrw/3kYyHUkFYkiEmtsjGUwzkQ" Selector="&lt;html app='chrome.exe' title='UiBank-Welcome' /&gt;" Url="https://uibank.uipath.com/welcome" Version="V2">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

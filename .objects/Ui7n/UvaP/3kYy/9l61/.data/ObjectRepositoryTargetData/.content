@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TAW3YjVRbEy--A0zehR_Rw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/loans" CVScreenId="9c4042a5-077e-489a-8b0b-404bf3f0bddf" DesignTimeRectangle="461, 537, 182, 50" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='applyButton' tag='BUTTON' /&gt;" Guid="93faa218-e239-474a-9c57-516045f7957c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Loan Home' /&gt;" SearchSteps="Selector" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="393, 314, 581, 119" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname=' Financing for what ever life throws at you! ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Financing for what ever life throws at you!' /&gt;" Guid="c2aa5081-ee7e-4e7d-b473-5a0c92f02860" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="99277ca7df005c9b5b6a3b9bcfc6c56d.png" xmlns="">0BDBgcWUL50ivRLX8D41pDA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
